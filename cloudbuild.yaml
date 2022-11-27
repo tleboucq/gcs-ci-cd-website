@@ -7,9 +7,7 @@ steps:
   args: ['install']
 
 
-- name: 'node'
-  entrypoint: 'npm run'
-  args: ['build']
+
 
 
 - name: 'node'
@@ -17,6 +15,10 @@ steps:
 
 - name: 'node'
   entrypoint: 'pwd'
+
+- name: 'node'
+  entrypoint: 'npm run'
+  args: ['build']
 
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'

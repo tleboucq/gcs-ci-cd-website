@@ -8,7 +8,15 @@ steps:
 
 
 - name: 'node'
+  entrypoint: 'npm run'
+  args: ['build']
+
+
+- name: 'node'
   entrypoint: 'ls'
+
+- name: 'node'
+  entrypoint: 'pwd'
 
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'

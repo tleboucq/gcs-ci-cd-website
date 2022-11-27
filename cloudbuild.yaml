@@ -1,17 +1,9 @@
 
-
-
 steps:
 - name: 'node'
   entrypoint: 'npm'
   args: ['install']
 
-
-
-
-
-- name: 'node'
-  entrypoint: 'ls'
 
 - name: 'node'
   entrypoint: 'pwd'
@@ -20,6 +12,8 @@ steps:
   entrypoint: 'npm'
   args: ['run', 'build']
 
+- name: 'node'
+  entrypoint: 'ls'
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  args: ['gsutil', 'cp', 'build/', 'gs://samyfadel']
+  args: ['gsutil', 'cp', '-r' 'build/', 'gs://samyfadel']

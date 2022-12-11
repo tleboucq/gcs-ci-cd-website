@@ -21,7 +21,7 @@ function App() {
     setOpen(true);
     //console.log(open);
 
-    const url = "http://34.160.109.71/microservice1/microservice1"
+    const url = "http://34.160.51.212/microservice1"
     axios
       .get(url)
       .then(function (response) {

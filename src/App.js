@@ -23,7 +23,11 @@ function App() {
 
     const url = "http://34.160.51.212/microservice1"
     axios
-      .get(url)
+      .get(url, {
+        headers: {
+          "Access-Control-Allow-Origin": true
+        }
+      })
       .then(function (response) {
         //console.log(response);
         //console.log(response.data);

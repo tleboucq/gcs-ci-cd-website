@@ -13,4 +13,4 @@ steps:
 
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  args: ['gsutil', 'cp', '-r', 'build/*', 'gs://samyfadel/']
+  args: ['gsutil', 'cp', '-r', 'build/*', 'gs://demo1frontendtleboucq/']
